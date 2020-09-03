@@ -7,7 +7,9 @@ Link to other projects are included, and for once the color-scheme is not comple
 
 ## Technologies
 * HTML5
+* CSS3
 * Media-Queries
+* FontAwesome
 * Google Fonts
 
 ## See it in action
