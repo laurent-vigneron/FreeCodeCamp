@@ -1,5 +1,5 @@
 # Front-End Libraries - Project #1
-## Build a Markdown Previewer
+## Build a Random Quote Machine
 
 ## Introduction
 A very small project using React. Not even using an API to get the quotes. Bootstrap is used to make the design better-looking.
