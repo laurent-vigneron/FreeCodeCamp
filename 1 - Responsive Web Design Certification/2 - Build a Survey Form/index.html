@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FCC - Survey Form</title>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id='sidebar'>
+            <ul>
+                <li>User Story #1: I can see a title with id="title" in H1 sized text.</li>
+                <li>User Story #2: I can see a short explanation with id="description" in P sized text.</li>
+                <li>User Story #3: I can see a form with id="survey-form".
+                <li>User Story #4: Inside the form element, I am required to enter my name in a field with id="name".</li>
+                <li>User Story #5: Inside the form element, I am required to enter an email in a field with id="email".</li>
+                <li>User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.</li>
+                <li>User Story #7: Inside the form, I can enter a number in a field with id="number".</li>
+                <li>User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.</li>
+                <li>User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.</li>
+                <li>User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".</li>
+                <li>User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.</li>
+                <li>User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".</li>
+                <li>User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.</li>
+                <li>User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.</li>
+                <li>User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.</li>
+                <li>User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.</li>
+            </ul>
+        </div>
+
+        <div id='mainContent'>
+            <h1 id='title'>Survey Form - <em>FreeCodeCamp.org</em></h1>
+            <p id='description'>This is the second '<strong>Responsive Web Design Projects</strong>', which consist of <u>building Survey Form</u> using HTML and CSS. <br><br>The list of all the <strong>user-requirements</strong> is shown on the left side of the screen for reference (or at the bottom on small screens).</p>
+            <hr>
+            <form id='survey-form'>
+                <fieldset id='info'>
+                    <legend>Tell us about you</legend>
+                    <label for='name' id='name-label'>Your name: </label><input id='name' type='text' placeholder='Your name here' required><br>
+                    <label for='email' id='email-label'>Your email: </label><input id='email' type='email' placeholder='Your email here' required><br>
+                    <label for='number' id='number-label'>Your age: </label><input id='number' type='number' min='10' max='95' placeholder='Your age'>
+                </fieldset><br><br>
+                
+                <fieldset>
+                    <legend>Years of coding experience</legend>
+                    <select id="dropdown" name="dropdown">
+                        <option value="a">Less than 6 months</option>
+                        <option value="b">Less than 2 years</option>
+                        <option value="c">2 to 4 years</option>
+                        <option value="d">More than 4 years</option>
+                    </select>
+                </fieldset>
+                <br><br>
+                
+                <fieldset>
+                    <legend>Favorite coding language</legend>
+                    <input type="radio" id="cpp" name="fav" value="cpp">
+                    <label for="cpp">C / C++</label><br>
+                    <input type="radio" id="python" name="fav" value="python">
+                    <label for="python">Python</label><br>
+                    <input type="radio" id="js" name="fav" value='js' checked>
+                    <label for="js">JavaScript</label><br>
+                    <input type="radio" id="tp" name="fav" value='tp'>
+                    <label for="tp">Turbo Pascal</label>      
+                </fieldset><br><br>
+                    
+                <fieldset>
+                    <legend>Your coding equipment</legend>
+                    <input type="checkbox" id="item1" name="item1" value="ipad">
+                    <label for="item1"> I have an iPad/iPad Pro</label><br>
+                    <input type="checkbox" id="item2" name="item2" value="laptop">
+                    <label for="item2"> I have a Laptop</label><br>
+                    <input type="checkbox" id="item3" name="item3" value="desktop">
+                    <label for="item3"> I have a Desktop computer</label><br>
+                    <input type="checkbox" id="item4" name="item4" value="so">
+                    <label for="item4"> I have a boyfriend / girlfriend</label>
+                </fieldset><br><br>
+                
+                <label for="area">Wanna tell us something?</label><br><textarea id="area" rows="3" cols="30"></textarea><br><br>
+                
+                <button type='submit' id='submit'>Submit</button>
+            </form>
+
+            <footer>
+                <hr>HTML/CSS Project for <a href='https://www.freecodecamp.org' target='_blank'>FreeCodeCamp.org</a>
+            </footer>
+        </div>
+    </body>
+</html>

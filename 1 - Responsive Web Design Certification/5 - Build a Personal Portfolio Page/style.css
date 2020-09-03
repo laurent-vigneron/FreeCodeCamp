@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+}
+.navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background-color: rgba(0,0,0,0.8);
+    text-align: right;
+    width: 100%;
+}
+.nav-li {
+    display: inline;
+    margin-right: 20px;
+    padding-right: .7rem;
+}
+.navlink {
+    color: inherit;
+    text-decoration: none;
+    padding: 2px 7px;
+}
+.navlink:hover {
+    color: #1ebba3;
+}
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    z-index: -1;
+    background-color: black;
+}
+.home-wrap {
+    position: absolute;
+    clip: rect(0, auto, auto, 0);
+    top: -10px;
+    left: -10px;
+    width: 101%;
+    height: 102%;
+}
+.home-inner {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpaperswide.com%2Fdownload%2Flaptop_4-wallpaper-2000x1333.jpg&f=1&nofb=1');
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.caption h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+}
+.caption h3 {
+    font-size: 2rem;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 1.6rem;
+}
+.btn {
+    border-width: medium;
+    border-radius: 15px;
+    padding: .6rem 1.3rem;
+    font-size: 1.1rem;
+}
+.offset:before {
+    display: block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+}
+#portfolio {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project-tile {
+    width: 500px;
+    margin: 30px;
+}
+#testimonials {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    background-color: lightgrey;
+    padding-bottom: 35px;
+}
+#testimonials h1 {
+    margin-top: 0px;
+}
+#clients {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.testi {
+    width: 600px;
+    margin: 0px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "img quote" "img sig";
+    grid-gap: 0px 20px;
+}
+.testi img {
+    grid-area: img;
+    width: 150px;
+    border-radius: 50%;
+}
+.quote {
+    grid-area: quote;
+    text-align: justify;
+    align-self: end;
+    margin-bottom: -20px;
+}
+.quote hr {
+    border-top: 1px solid #1ebba3;
+}
+.signature {
+    grid-area: sig;
+    align-self: baseline;
+    text-align: left;
+}
+footer {
+    background-color: #40474e;
+    text-align: center;
+    color: white;
+    padding: 60px 10px 25px 10px;
+}
+footer img {
+    height: 3rem;
+    margin: 1.5rem 0;
+}
+footer a {
+    color: white;
+}
+footer svg.svg-inline--fa {
+    font-size: 1.6rem;
+    margin: 1.2rem .5rem 0 0;
+}
+footer svg.svg-inline--fa:hover {
+    color: #1ebba3;
+}
+
+.heart {
+    position: static;
+    margin: auto;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+}
+.heart::after {
+    background-color: pink;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+.heart::before {
+    content: "";
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+@media (max-width: 1000px) {
+    #clients {
+        width: 90%;
+    }
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        font-size: .8rem;
+        letter-spacing: .05rem;
+    }
+    .nav-li {
+        margin-right: 5px;
+        padding-right: 10px;
+    }
+    .navlink {
+        padding: 0px 0px;
+    }
+    .caption h1 {
+        font-size: 2.3rem;
+        font-weight: 700;
+        letter-spacing: .3rem;
+        text-shadow: .1rem .1rem .8rem black;
+        padding-bottom: 1rem;
+    }
+    .caption h3 {
+        font-size: 1.3rem;
+        text-shadow: .1rem .1rem .5rem black;
+        padding-bottom: 1.6rem;
+    }
+    .btn {
+        border-width: medium;
+        border-radius: 50%;
+        padding: .6rem 1.3rem;
+        font-size: 0.7rem;
+    }
+    #portfolio {
+        width: 90%;
+    }
+    #clients {
+        width: 100%;
+    }
+
+}
