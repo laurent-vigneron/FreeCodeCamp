@@ -3,7 +3,7 @@
 
 ## Introduction
 This is a simple html/css project aimed at using the basics. 
-Here the text and most pictures have been taken directly from Wikipedia, and the color-scheme is quite ugly, but it gets the job done.
+The text and most pictures have been taken directly from Wikipedia, and the color-scheme is quite ugly, but it gets the job done.
 
 ## Technologies
 * CSS GRID
@@ -12,4 +12,4 @@ Here the text and most pictures have been taken directly from Wikipedia, and the
 * Google Fonts
 
 ## See it in action
-https://codepen.io/ljjr/pen/rNOaXQm
+<a href="https://codepen.io/ljjr/pen/rNOaXQm" target="_blank">https://codepen.io/ljjr/pen/rNOaXQm</a>
