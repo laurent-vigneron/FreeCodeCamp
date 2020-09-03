@@ -1,0 +1,107 @@
+body {
+    --background: hsl(180, 80%, 90%);
+    --header: hsl(180, 90%, 35%);
+    --content: hsl(180, 50%, 65%);
+    background-color: var(--background, pink);
+  }
+  
+  #main {
+    width: 65%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 100px auto 75px;
+    grid-template-areas:
+      "thumbnail header"
+      "thumbnail content"
+      "footer footer";
+  }
+  #header {
+    grid-area: header;
+    background-color: var(--header, black);
+    color: hsl(230, 50%, 50%);
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+  }
+  #title {
+    margin-top: 0px;
+    margin-bottom: -20px;
+  }
+  #footer {
+    border-top: 4px solid black;
+    grid-area: footer;
+    text-align: center;
+    background-color: var(--header, black);
+    font-style: italic;
+  }
+  #thumbnail {
+    grid-area: thumbnail;
+    background-color: var(--background, pink);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+  }
+  .thumb {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border: 2px solid white;
+  }
+  .caption {
+    position: relative;
+  }
+  .caption figcaption {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 200px;
+    padding: 20px;
+    background: #2c3f52;
+    color: #ed4e6e;
+    opacity: 0%;
+        -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+      -moz-transition: -moz-transform 0.5s, opacity 0.5s;
+      transition: transform 0.5s, opacity 0.5s;
+  }
+  .caption figcaption:hover {
+    opacity: 1;
+  }
+  #article {
+    grid-area: content;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--content, grey);
+    padding: 25px 10px;
+  }
+  #img-div {
+    float: right;
+    border: 2px solid black;
+    max-width: 40%;
+    background-color: darkgrey;
+  }
+  #image {
+    display: block;
+    max-width: 100%;
+    height:auto;
+    align: center;
+  }
+  #img-caption {
+    font-size: 0.7em;
+    text-align: center;
+  }
+  
+  @media (max-width: 800px) {
+    #main {
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 100px auto auto 75px;
+      grid-template-areas:
+        "header"
+        "content"
+        "thumbnail"
+        "footer";
+    }
+  }
