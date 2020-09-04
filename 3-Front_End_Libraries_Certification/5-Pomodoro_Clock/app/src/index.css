@@ -1,0 +1,7 @@
+#main-title, #timer-label, #break-label, #session-label {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+#time-left, #break-length, #session-length {
+  font-family: 'Cabin Sketch', cursive;
+}
