@@ -9,6 +9,5 @@ The only 'tricky' part of this project was the synchronization of the clock usin
 * React
 * Bootstrap 4
 
-
 ## See it in action
 https://codepen.io/ljjr/full/zYqqNVp
