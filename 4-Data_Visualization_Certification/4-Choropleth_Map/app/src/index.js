@@ -68,15 +68,15 @@ class Choropleth extends React.Component {
       .attr("text-anchor", "start")
       .attr("font-weight", "bold")
 
-            g.call(d3.axisBottom(x)
-                    .tickSize(13)
-                    .tickFormat(function(x) { return x + '%'; })
-                    .tickValues(color.domain()))
-              .select(".domain")
-              .remove();
+    g.call(d3.axisBottom(x)
+            .tickSize(13)
+            .tickFormat(function(x) { return x + '%'; })
+            .tickValues(color.domain()))
+      .select(".domain")
+      .remove();
 
 
-            svg.append("g")
+    svg.append("g")
       .attr("class", "counties")
       .selectAll("path")
       .data(topojson.feature(us[0], us[0].objects.counties).features)
