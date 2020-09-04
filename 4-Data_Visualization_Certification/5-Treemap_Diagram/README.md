@@ -1,5 +1,5 @@
-# Data-Visualization - Project #4
-## Build a Choropleth Map
+# Data-Visualization - Project #5
+## Build a Treemap Diagram
 
 ## Introduction
 I have to admit that this one took me by surprise. I had to dig into the documentation for several (6+) hours before I could even get a prototype working. 
@@ -13,4 +13,4 @@ D3 libraries used: d3-scale-chromatic and topojson
 * API Fetch
 
 ## See it in action
-https://codepen.io/ljjr/full/yLOVbrE
+https://codepen.io/ljjr/full/
