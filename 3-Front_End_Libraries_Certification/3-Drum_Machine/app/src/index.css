@@ -1,0 +1,12 @@
+.drum-pad {
+  margin:2px;
+  width: 2.7em;
+  transition: all 0.15s ease!important;
+}
+
+.playing {
+  transform: scale(1.1);
+  border: 1px solid yellow!important;
+  border-radius:50%!important;
+  background-image: linear-gradient(-45deg, red, yellow);
+}
