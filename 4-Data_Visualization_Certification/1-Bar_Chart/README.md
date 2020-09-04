@@ -6,6 +6,7 @@ In this series we'll make use of the D3 (Data-Driven Documents) Library in order
 This first project is a simple Bar Chart where we want to see the evolution of the US GDP in the past 50 years.
 I've used React as well, although it was not really necessary here.
 The data is fetched without the use of an external library like Axios. Just 'Fetch'.
+For the graph's axis we'll have a Linear-Scale (GDP values) and a Time-Scale (date values).
 
 ## Technologies
 * D3
