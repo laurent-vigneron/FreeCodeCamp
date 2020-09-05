@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+      <title>File Metadata Microservice</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+      <div class="container">
+        <h2>File Metadata Microservice</h2>
+        <hr />
+        <h4>Upload a file and we'll analyse it</h4>
+        <form action="/api/upload" method="POST" enctype="multipart/form-data">
+          <div class="form-group text-center">
+            <label for="upfile">Example file input</label>
+            <input type="file" class="form-control-file" id="upfile" name="upfile">
+          </div>
+          <input class='btn btn-primary block' type='submit' value='upload'>
+        </form>
+      </div>
+      <div class="footer">
+        <p>
+          <a href="https://www.freecodecamp.org">freeCodeCamp</a>
+        </p>
+      </div>
+  </body>
+</html>
