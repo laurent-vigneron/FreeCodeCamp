@@ -11,8 +11,9 @@ e.g. `{"unix": 1479663089000 ,"utc": "Sun, 20 Nov 2016 17:31:29 GMT"}`.
 5. If the date string is **invalid** the api returns a JSON having the structure `{"error" : "Invalid Date" }`.
 
 #### Example usage:
-* https://AcclaimedVirtuousSort--five-nine.repl.co/api/timestamp/2015-12-25
-* https://AcclaimedVirtuousSort--five-nine.repl.co/api/timestamp/1451001600000
+* https://Timestamp-Microservice--freecodecamp.repl.co/api/timestamp/2015-12-25
+* https://Timestamp-Microservice--freecodecamp.repl.co/api/timestamp/1451001600000
+>>>>>>> 246177d8040d413b59c6706e1cafe79864a04024
 
 #### Example output:
 * {"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}
