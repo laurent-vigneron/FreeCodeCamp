@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+      <title>Exercise Tracker</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+      <div class="container">
+        <h2>Welcome to FCC's Exercise Tracker</h2>
+        <hr />
+        <h4>If you're not registered, sign-up today! It's free!!</h4>
+        <form action="/api/exercise/new-user" method="POST">
+          <div class="form-group col-12">
+            <label for="username">Your username</label>
+            <input id="username" class='form-control' type="text" name="username" style="width:100%" />
+            <small id="emailHelp" class="form-text text-muted">We won't even ask for your email. You're safe with us.</small>
+          </div>
+          <input type="submit" class='btn btn-primary' value="Join the fun!">
+        </form>
+        <hr />
+        <h3>Log a new workout</h3>
+        <p>For registered users</br>Just fill the form below</p>
+        <form action="/api/exercise/add" method="POST">
+          <div class="form-group">
+            <label for="userId">Your User-ID</label>
+            <input id="userId" class="form-control" type="text" name="userId" style="width:100%" required />
+          </div>
+          <div class="form-group">
+            <label for="description">Exercise to log (what did you do?)</label>
+            <input id="description" class="form-control" type="text" name="description" style="width:100%" required />
+          </div>
+          <div class='form-row'>
+            <div class="form-group col">
+              <label for="duration">Duration (in minutes)</label>
+              <input id="duration" class="form-control" type="number" name="duration" required />
+            </div>
+            <div class="form-group col">
+              <label for="date">Date (if not today)</label>
+              <input id="date" class="form-control text-center" type="date" name="date" />
+            </div>
+          </div>
+          <input class='btn btn-primary btn-block' type="submit" value="Log my Workout!" />
+        </form>
+      <div class="footer">
+        <p>
+          <a href="https://www.freecodecamp.org">freeCodeCamp</a>
+        </p>
+      </div>
+  </body>
+</html>
