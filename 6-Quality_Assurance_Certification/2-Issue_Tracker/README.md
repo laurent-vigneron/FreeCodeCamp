@@ -2,7 +2,9 @@
 # Issue Tracking
 
 ## Introduction
-...
+For this one I was thinking of using Mongoose again, especially since the Mongoose Models can have automatic 'created on' and 'updated on' timestamps, but since the code already provided was using MongoClient, I went with it as if it was part of the exercise.
+In my design, I choose not to allow issues with the same name on the same project. Because of that, the tests required to pass the certification will not work unless I reset the DB each time, so this is what I do. At each start, the DB is cleaned up in order to ensure all the functional tests will behave as expected.
+Also note that the design here is ugly. But I didn't want to change it as it was provided like this, and I didn't want to take the risk of removing something that could impact the tests by FCC's automate.
 Also, if you Clone this, don't forget to set `NODE_ENV` to `test` without quotes in your .env (if you're using dotenv) or your environment variables. Otherwise the tests will not run.
 ---
 ### User stories:
