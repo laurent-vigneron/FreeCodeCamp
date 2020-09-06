@@ -18,8 +18,10 @@ Also, if you Clone this, don't forget to set `NODE_ENV` to `test` without quotes
 10. All 6 functional tests required are complete and passing.
 
 ### Usage :
-* /api/issues/{project}
-* /api/issues/{project}?open=true&assigned_to=Joe
+| API            | GET            | POST                | DELETE           |
+|----------------|----------------|---------------------|------------------|
+| api/books      | list all books | add new book        | delete all books |
+| api/books/1234 | show book 1234 | add comment to 1234 | delete book 1234 |
 ---
 ## Technologies
 * NodeJS
@@ -29,4 +31,4 @@ Also, if you Clone this, don't forget to set `NODE_ENV` to `test` without quotes
 * Helmet
 ---
 ## See it in action
-[Check on Repl.it](...)
+[Check on Repl.it](https://StarchyMintcreamGenerics--five-nine.repl.co)
