@@ -23,40 +23,53 @@ app.use(cors({origin: '*'})); //USED FOR FCC TESTING PURPOSES ONLY!
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//Index page (static HTML)
-app.route('/')
-  .get(function (req, res) {
-    res.sendFile(process.cwd() + '/views/index.html');
-  });
+require('dotenv').config();
+const MongoClient = require('mongodb').MongoClient;
+MongoClient.connect(process.env.DB, function(err, client) {
+  if(err) { console.log('DB error: ' + err); }
+  else {
+    const db = client.db('FCCPersonalLibrary');
+    db.collection('books').drop();  // only useful for running the tests
+    console.log('DB connection successful.');
 
-//For FCC testing purposes
-fccTestingRoutes(app);
+    //Index page (static HTML)
+    app.route('/')
+      .get(function (req, res) {
+        res.sendFile(process.cwd() + '/views/index.html');
+      });
 
-//Routing for API 
-apiRoutes(app);  
-    
-//404 Not Found Middleware
-// app.use(function(req, res, next) {
-//   res.status(404)
-//     .type('text')
-//     .send('Not Found');
-// });
+    //For FCC testing purposes
+    fccTestingRoutes(app);
 
-//Start our server and tests!
-app.listen(process.env.PORT || 3000, function () {
-  console.log("Listening on port " + process.env.PORT);
-  if(process.env.NODE_ENV==='test') {
-    console.log('Running Tests...');
-    setTimeout(function () {
-      try {
-        runner.run();
-      } catch(e) {
-        var error = e;
-          console.log('Tests are not valid:');
-          console.log(error);
+    //Routing for API 
+    apiRoutes(app, db);  
+        
+    //404 Not Found Middleware
+    // app.use(function(req, res, next) {
+    //   res.status(404)
+    //     .type('text')
+    //     .send('Not Found');
+    // });
+
+    //Start our server and tests!
+    app.listen(process.env.PORT || 3000, function () {
+      console.log("Listening on port " + process.env.PORT);
+      if(process.env.NODE_ENV==='test') {
+        console.log('Running Tests...');
+        setTimeout(function () {
+          try {
+            runner.run();
+          } catch(e) {
+            var error = e;
+              console.log('Tests are not valid:');
+              console.log(error);
+          }
+        }, 1500);
       }
-    }, 1500);
+    });
+
+    
   }
-});
+})
 
 module.exports = app; //for unit/functional testing
