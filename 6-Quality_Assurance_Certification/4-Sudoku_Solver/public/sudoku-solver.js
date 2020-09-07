@@ -80,7 +80,7 @@ function gridUpdate() {
   if(textArea.value.length === 81) {
     error.innerHTML = '';
     grid.forEach((cell, i) => {
-      if(textArea.value[i]!=='.' && !isNaN(textArea.value[i])) {
+      if(textArea.value[i]!=='.' && !isNaN(textArea.value[i]) && textArea.value[i]!=='0') {
         cell.value=textArea.value[i];
       } else {
         cell.value=''
