@@ -87,7 +87,7 @@ suite('Unit Tests', () => {
 
       test('No Mr. Bond, I expect you to die. --> No Mr Bond, I expect you to die. ', done => {
         const input = 'No Mr. Bond, I expect you to die.';
-        const output = 'No <span class="highlight">Mr </span>Bond, I expect you to die.';
+        const output = 'No <span class="highlight">Mr</span> Bond, I expect you to die.';
         let result = Translator.usToEn(input);
         assert.equal(result, output);
         done();
@@ -95,7 +95,7 @@ suite('Unit Tests', () => {
 
       test('Dr. Grosh will see you now. --> Dr Grosh will see you now. ', done => {
         const input = 'Dr. Grosh will see you now.';
-        const output = '<span class="highlight">Dr </span>Grosh will see you now.';
+        const output = '<span class="highlight">Dr</span> Grosh will see you now.';
         let result = Translator.usToEn(input);
         assert.equal(result, output);
         done();
@@ -171,7 +171,7 @@ suite('Unit Tests', () => {
 
       test("Have you met Mrs Kalyani? --> Have you met Mrs. Kalyani?", done => {
         const input = "Have you met Mrs Kalyani?";
-        const output = 'Have you met <span class="highlight">Mrs. </span>Kalyani?';
+        const output = 'Have you met <span class="highlight">Mrs.</span> Kalyani?';
         let result = Translator.enToUs(input);
         assert.equal(result, output);
         done();
@@ -179,7 +179,7 @@ suite('Unit Tests', () => {
 
       test("Prof Joyner of King's College, London. --> Prof. Joyner of King's College, London.", done => {
         const input = "Prof Joyner of King's College, London.";
-        const output = `<span class="highlight">Prof. </span>Joyner of King's College, London.`;
+        const output = `<span class="highlight">Prof.</span> Joyner of King's College, London.`;
         let result = Translator.enToUs(input);
         assert.equal(result, output);
         done();

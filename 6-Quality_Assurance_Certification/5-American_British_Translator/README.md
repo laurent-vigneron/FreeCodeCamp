@@ -2,7 +2,7 @@
 # British English Translator
 
 ## Introduction
-
+This project was more a way to test my knowledge of Regular Expressions (hello Lookahead and Lookbehind) than about testing. I recommend you check [this page](https://www.rexegg.com/regex-lookarounds.html). The rest of the logic is not too difficult.
 If you Clone this, don't forget to set `NODE_ENV` to `test` without quotes in your .env (if you're using dotenv) or your environment variables. Otherwise the tests will not run.
 ---
 ### User stories:

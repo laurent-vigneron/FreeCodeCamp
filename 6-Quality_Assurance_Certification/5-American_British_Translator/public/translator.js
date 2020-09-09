@@ -69,10 +69,9 @@ function usToEn(string) {
   result = result.replace(reg, `<span class="highlight">${americanToBritishSpelling[save]}</span>`);
 
   Object.keys(americanToBritishTitles).forEach(term => {
-    const regex =  new RegExp(term+' ','ig'); 
+    const regex =  new RegExp('^'+term+'(?=\\W)(?!-)|(?<=\\W)(?<!-)'+term+'(?=\\W)(?!-)','ig');
     const reference = result.match(regex) || term;
-    // console.log(reference);
-    result = result.replace(regex, `<span class="highlight">${matchCase(americanToBritishTitles[term]+'', reference[0].slice(0,-2))} </span>`);
+    result = result.replace(regex, `<span class="highlight">${matchCase(americanToBritishTitles[term]+'', reference[0].slice(0,-2))}</span>`);
   })
 
   // take care of time
@@ -90,15 +89,14 @@ function getKeyByValue(object, value) {
 }
 
 function matchCase(s1, s2) {
+  if(!s2) return s1;
   let result = '';
-  // console.log(s1, s1.length, s2, s2.length);
-  for(let i=0; i<s2.length; i++){
-    if(s2[i]===s2[i].toUpperCase()){
-      result += s1[i].toUpperCase();
-    } else {
-      result += s1[i];
-    }
+  if(s2[0]===s2[0].toUpperCase()){
+    result = s1[0].toUpperCase() + s1.slice(1);
+  } else {
+    result = s1;
   }
+  
   return result;
 }
 
@@ -135,13 +133,12 @@ function enToUs(string) {
     result = result.replace(reg, `<span class="highlight">${getKeyByValue(americanToBritishSpelling ,save)}</span>`);
 
     Object.values(americanToBritishTitles).forEach(term => {
-      const regex =  new RegExp(term+' ','ig'); 
+      const regex =  new RegExp('^'+term+'(?=\\s)|(?<=\\W)'+term+'(?=\\s)','ig');  
       const reference = result.match(regex) || term;
-      // console.log(reference);
-      result = result.replace(regex, `<span class="highlight">${matchCase(getKeyByValue(americanToBritishTitles, term), reference[0])} </span>`);
+      result = result.replace(regex, `<span class="highlight">${matchCase(getKeyByValue(americanToBritishTitles, term), reference[0])}</span>`);
     })
   }
-
+  console.log(result);
   // take care of time
   result = result.replace(/(\W\d?\d)[.](\d\d)/, '<span class="highlight">$1:$2</span>');
 
