@@ -32,8 +32,6 @@ suite('Unit Tests', () => {
         const input = 'Mangoes are my favorite fruit.';
         const output = 'Mangoes are my <span class="highlight">favourite</span> fruit.';
         let result = Translator.usToEn(input);
-        console.log(result);
-        console.log(output);
         assert.equal(result, output);
         done();
       });
@@ -42,7 +40,6 @@ suite('Unit Tests', () => {
         const input = 'I ate yogurt for breakfast.';
         const output = 'I ate <span class="highlight">yoghurt</span> for breakfast.';
         let result = Translator.usToEn(input);
-        console.log(result);
         assert.equal(result, output);
         done();
 
@@ -52,7 +49,6 @@ suite('Unit Tests', () => {
         const input = "We had a party at my friend's condo.";
         const output = `We had a party at my friend's <span class="highlight">flat</span>.`;
         let result = Translator.usToEn(input);
-        console.log(result);
         assert.equal(result, output);
         done();
       });
@@ -61,7 +57,6 @@ suite('Unit Tests', () => {
         const input = 'Can you toss this in the trashcan for me?';
         const output = 'Can you toss this in the <span class="highlight">bin</span> for me?';
         let result = Translator.usToEn(input);
-        console.log(result);
         assert.equal(result, output);
         done();
       });
@@ -70,7 +65,6 @@ suite('Unit Tests', () => {
         const input = 'The parking lot was full.';
         const output = 'The <span class="highlight">car park</span> was full.';
         let result = Translator.usToEn(input);
-        console.log(result);
         assert.equal(result, output);
         done();
       });
@@ -79,7 +73,6 @@ suite('Unit Tests', () => {
         const input = 'Like a high tech Rube Goldberg machine.';
         const output = 'Like a high tech <span class="highlight">Heath Robinson device</span>.';
         let result = Translator.usToEn(input);
-        console.log(result);
         assert.equal(result, output);
         done();
       });
@@ -88,7 +81,6 @@ suite('Unit Tests', () => {
         const input = 'To play hooky means to skip class or work.';
         const output = 'To <span class="highlight">bunk off</span> means to skip class or work.';
         let result = Translator.usToEn(input);
-        console.log(result);
         assert.equal(result, output);
         done();
       });
@@ -97,7 +89,6 @@ suite('Unit Tests', () => {
         const input = 'No Mr. Bond, I expect you to die.';
         const output = 'No <span class="highlight">Mr </span>Bond, I expect you to die.';
         let result = Translator.usToEn(input);
-        console.log(result);
         assert.equal(result, output);
         done();
       });
@@ -106,7 +97,6 @@ suite('Unit Tests', () => {
         const input = 'Dr. Grosh will see you now.';
         const output = '<span class="highlight">Dr </span>Grosh will see you now.';
         let result = Translator.usToEn(input);
-        console.log(result);
         assert.equal(result, output);
         done();
       });
@@ -115,7 +105,6 @@ suite('Unit Tests', () => {
         const input = 'Lunch is at 12:15 today.';
         const output = 'Lunch is at<span class="highlight"> 12.15</span> today.';
         let result = Translator.usToEn(input);
-        console.log(result);
         assert.equal(result, output);
         done();
       });
@@ -128,7 +117,6 @@ suite('Unit Tests', () => {
         const input = 'We watched the footie match for a while.';
         const output = 'We watched the <span class="highlight">soccer</span> match for a while.';
         let result = Translator.enToUs(input);
-        console.log(result);
         assert.equal(result, output);
         done();
       });
@@ -137,7 +125,6 @@ suite('Unit Tests', () => {
         const input = 'Paracetamol takes up to an hour to work.';
         const output = '<span class="highlight">Tylenol</span> takes up to an hour to work.';
         let result = Translator.enToUs(input);
-        console.log(result);
         assert.equal(result, output);
         done();
       });
@@ -146,7 +133,6 @@ suite('Unit Tests', () => {
         const input = 'First, caramelise the onions.';
         const output = 'First, <span class="highlight">caramelize</span> the onions.';
         let result = Translator.enToUs(input);
-        console.log(result);
         assert.equal(result, output);
         done();
       });
@@ -155,7 +141,6 @@ suite('Unit Tests', () => {
         const input = 'I spent the bank holiday at the funfair.';
         const output = 'I spent the <span class="highlight">public holiday</span> at the <span class="highlight">carnival</span>.';
         let result = Translator.enToUs(input);
-        console.log(result);
         assert.equal(result, output);
         done();
       });
@@ -164,7 +149,6 @@ suite('Unit Tests', () => {
         const input = 'I had a bicky then went to the chippy.';
         const output = 'I had a <span class="highlight">cookie</span> then went to the <span class="highlight">fish-and-chip shop</span>.';
         let result = Translator.enToUs(input);
-        console.log(result);
         assert.equal(result, output);
         done();
       });
@@ -173,7 +157,6 @@ suite('Unit Tests', () => {
         const input = "I've just got bits and bobs in my bum bag.";
         const output = `I've just got <span class="highlight">odds and ends</span> in my <span class="highlight">fanny pack</span>.`;
         let result = Translator.enToUs(input);
-        console.log(result);
         assert.equal(result, output);
         done();
       });
@@ -182,7 +165,6 @@ suite('Unit Tests', () => {
         const input = "The car boot sale at Boxted Airfield was called off.";
         const output = 'The <span class="highlight">swap meet</span> at Boxted Airfield was called off.';
         let result = Translator.enToUs(input);
-        console.log(result);
         assert.equal(result, output);
         done();
       });
@@ -191,7 +173,6 @@ suite('Unit Tests', () => {
         const input = "Have you met Mrs Kalyani?";
         const output = 'Have you met <span class="highlight">Mrs. </span>Kalyani?';
         let result = Translator.enToUs(input);
-        console.log(result);
         assert.equal(result, output);
         done();
       });
@@ -200,7 +181,6 @@ suite('Unit Tests', () => {
         const input = "Prof Joyner of King's College, London.";
         const output = `<span class="highlight">Prof. </span>Joyner of King's College, London.`;
         let result = Translator.enToUs(input);
-        console.log(result);
         assert.equal(result, output);
         done();
       });
@@ -209,7 +189,6 @@ suite('Unit Tests', () => {
         const input = 'Tea time is usually around 4 or 4.30.';
         const output = 'Tea time is usually around 4 or<span class="highlight"> 4:30</span>.';
         let result = Translator.enToUs(input);
-        console.log(result);
         assert.equal(result, output);
         done();
       });
