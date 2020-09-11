@@ -51,7 +51,6 @@ def create_spend_chart(categories):
     percents = []
     for num, amount in enumerate(totals):
         percents.append(totals[num]/total_amount)
-    print(percents)
     
     # Step 2: draw the graph (Y-Axis + dots)
     result += 'Percentage spent by category\n'
