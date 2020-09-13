@@ -3,7 +3,11 @@
 
 ### See it in action
 [check on Repl.it](https://repl.it/repls/SelfreliantFirmErrors#mean_var_std.py)
-
+---
+## Technologies
+* Python 3
+* NumPy
+---
 ### Assignment
 
 Create a function named `calculate()` in `mean_var_std.py` that uses Numpy to output the mean, variance, standard deviation, max, min, and sum of the rows, columns, and elements in a 3 x 3 matrix. 
