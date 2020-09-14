@@ -5,8 +5,9 @@
 [check on Repl.it](https://repl.it/repls/BronzeWrongAbandonware#demographic_data_analyzer.py)
 ---
 ## Technologies
-* NodeJS
-* Express
+* Python 3
+* Pandas
+* Series & DataFrames
 ---
 ### Assignment
 
