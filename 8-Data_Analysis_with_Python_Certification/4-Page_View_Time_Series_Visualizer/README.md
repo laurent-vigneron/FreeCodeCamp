@@ -1,14 +1,9 @@
 # Data-Analysis with Python - Project #4
-## Page-View Time-Series Visualization
+## Page-Views Time-Series Visualization
 
 ### See it in action
 
-[check on Repl.it](...)
-
----
-### Note(s)
-
-...
+[check on Repl.it](https://repl.it/repls/LightyellowTatteredSlash#time_series_visualizer.py)
 
 ---
 ### Technologies
