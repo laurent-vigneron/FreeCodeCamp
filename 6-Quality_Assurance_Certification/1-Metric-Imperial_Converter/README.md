@@ -2,10 +2,24 @@
 # Metric / Imperial converter
 
 ## Introduction
+
 For this project the server and front-end parts were provided (with a few exceptions), to the bulk of the work consisted of writing the test (using Chai JS and Zombie) and the conversion logic.
 Nothing too complicated. One thing leads to another and before you know it it's all working.
 However there are two requirement that are security related (#1 and #2 below), which both require the use of the `helmet` library, which is only discussed in the 'Security' Chapter of FreeCodeCamp. So I was surprised to find such requirements here...
 Also, if you Clone this, don't forget to set `NODE_ENV` to `test` without quotes in your .env (if you're using dotenv) or your environment variables. Otherwise the tests will not run.
+
+---
+## Technologies
+* NodeJS
+* Express
+* Chai
+* Zombie
+* Helmet
+---
+## See it in action
+
+[Check on Repl.it](https://TrueScentedQuadrant--five-nine.repl.co)
+
 ---
 ### User stories:
 1. I will help prevent the client from trying to guess(sniff) the MIME type.
@@ -30,13 +44,4 @@ Also, if you Clone this, don't forget to set `NODE_ENV` to `test` without quotes
 
 ### Example Return:
 * {initNum: 3.1, initUnit: 'mi', returnNum: 5.0000008, returnUnit: 'km', string: '3.1 miles converts to 5.00002 kilometers'}
----
-## Technologies
-* NodeJS
-* Express
-* Chai
-* Zombie
-* Helmet
----
-## See it in action
-[Check on Repl.it](https://TrueScentedQuadrant--five-nine.repl.co)
+

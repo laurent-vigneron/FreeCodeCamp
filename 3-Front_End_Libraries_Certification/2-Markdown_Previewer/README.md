@@ -2,6 +2,7 @@
 ## Build a Markdown Previewer
 
 ## Introduction
+
 A React project based on three different React components, and using the Marked library in order to render the Markdown.
 With some Bootstrap on top to make it look better.
 
@@ -12,4 +13,5 @@ With some Bootstrap on top to make it look better.
 * DOMPurify js
 
 ## See it in action
+
 https://codepen.io/ljjr/full/GRZorPK

@@ -2,8 +2,21 @@
 # British English Translator
 
 ## Introduction
+
 This project was more a way to test my knowledge of Regular Expressions (hello Lookahead and Lookbehind) than about testing. I recommend you check [this page](https://www.rexegg.com/regex-lookarounds.html). The rest of the logic is not too difficult.
 If you Clone this, don't forget to set `NODE_ENV` to `test` without quotes in your .env (if you're using dotenv) or your environment variables. Otherwise the tests will not run.
+
+---
+## Technologies
+* NodeJS
+* Express
+* Chai
+* JSDom
+---
+## See it in action
+
+[Check on Repl.it](...)
+
 ---
 ### User stories:
 
@@ -17,12 +30,3 @@ If you Clone this, don't forget to set `NODE_ENV` to `test` without quotes in yo
 1. I can press the "Clear Input" button to remove all text from the text area and the `translated-sentence` `div`.
 1. All 20 unit tests are complete and passing. See `/tests/1_unit-tests.js` for the sentences you should write tests for.
 1. All 4 functional tests are complete and passing. See `/tests/2_functional-tests.js` for the functionality you should write tests for.
----
-## Technologies
-* NodeJS
-* Express
-* Chai
-* JSDom
----
-## See it in action
-[Check on Repl.it](...)

@@ -2,6 +2,7 @@
 ## Projects #1 to #5
 
 ## Introduction
+
 The projects presented here each represent a specific problem that needed to be solved using a JavaScript function.
 * Palindrome Checker
     Returns true if the given string is a palindrome. Otherwise, returns false.

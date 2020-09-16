@@ -2,6 +2,7 @@
 ## Build a Tribute page
 
 ## Introduction
+
 This is a simple html/css project aimed at using the basics. 
 The text and most pictures have been taken directly from Wikipedia, and the color-scheme is quite ugly, but it gets the job done.
 
@@ -13,4 +14,5 @@ The text and most pictures have been taken directly from Wikipedia, and the colo
 * Google Fonts
 
 ## See it in action
+
 https://codepen.io/ljjr/pen/rNOaXQm

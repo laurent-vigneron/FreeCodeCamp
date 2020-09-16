@@ -1,5 +1,13 @@
 # API Project - Project #1 - Timestamp Microservice
 
+## See it in action
+
+[Check on Repl.it](https://AcclaimedVirtuousSort--five-nine.repl.co)
+
+## Technologies
+* NodeJS
+* Express
+---
 ### User stories:
 
 1. The API endpoint is `GET [project_url]/api/timestamp/:date_string?`
@@ -16,10 +24,3 @@ e.g. `{"unix": 1479663089000 ,"utc": "Sun, 20 Nov 2016 17:31:29 GMT"}`.
 
 #### Example output:
 * {"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}
----
-## Technologies
-* NodeJS
-* Express
----
-## See it in action
-[Check on Repl.it](https://AcclaimedVirtuousSort--five-nine.repl.co)

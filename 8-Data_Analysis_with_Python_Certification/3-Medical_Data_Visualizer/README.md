@@ -2,11 +2,15 @@
 ## Medical Data Visualizer
 
 ### See it in action
-[check on Repl.it](...)
+
+[check on Repl.it](https://repl.it/repls/GlassLightpinkRange#medical_data_visualizer.py)
+
 ---
 ### Note(s)
+
 Be careful with the version of Matplotlib that you will be using for this project.
 You will need the version 3.1.3 in order to have some of the tests to run correctly (otherwise you will have an error with something like 'Second list contains 3 additional elements.')
+
 ---
 ### Technologies
 * Python 3

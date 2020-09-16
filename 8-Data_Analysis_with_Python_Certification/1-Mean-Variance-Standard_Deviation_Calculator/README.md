@@ -2,7 +2,9 @@
 ## Mean-Variance-Standard Deviation Calculator
 
 ### See it in action
+
 [check on Repl.it](https://repl.it/repls/SelfreliantFirmErrors#mean_var_std.py)
+
 ---
 ## Technologies
 * Python 3

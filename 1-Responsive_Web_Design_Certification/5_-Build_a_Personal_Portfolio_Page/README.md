@@ -2,6 +2,7 @@
 ## Build a Personal Portfolio Page
 
 ## Introduction
+
 A more refined project with a lot more CSS styling than the previous FCC projects so far.
 Link to other projects are included, and for once the color-scheme is not completely ugly. 
 
@@ -13,4 +14,5 @@ Link to other projects are included, and for once the color-scheme is not comple
 * Google Fonts
 
 ## See it in action
+
 https://codepen.io/ljjr/full/pojJOKJ

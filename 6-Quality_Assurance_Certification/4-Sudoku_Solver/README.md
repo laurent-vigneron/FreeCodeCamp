@@ -2,8 +2,21 @@
 # Sudoku Solver
 
 ## Introduction
+
 Complete change of pace with this project. No CRUD implementation needed, instead the logic is 100% pure JS. The testing part actually took me some time to figure out. In the end I had to bring the puzzle-solution constant within the main 'suduku-solver.js' in order to avoir an error from happening.
 If you Clone this, don't forget to set `NODE_ENV` to `test` without quotes in your .env (if you're using dotenv) or your environment variables. Otherwise the tests will not run.
+
+---
+## Technologies
+* NodeJS
+* Express
+* Chai
+* JSDom
+---
+## See it in action
+
+[Check on Repl.it](https://OrangeUnsightlyTransformation--five-nine.repl.co)
+
 ---
 ### User stories:
 1. I can enter a sudoku puzzle by filling in the text area with either a number or period (.) to represent an empty cell. 
@@ -18,12 +31,3 @@ If you Clone this, don't forget to set `NODE_ENV` to `test` without quotes in yo
 10. I can clear the text area and sudoku grid by clicking the "Clear" button.
 11. All 6 unit tests are complete and passing. See `/tests/1_unit-tests.js` for the expected behavior you should write tests for.
 12. All 4 functional tests are complete and passing. See `/tests/2_functional-tests.js` for the functionality you should write tests for.
----
-## Technologies
-* NodeJS
-* Express
-* Chai
-* JSDom
----
-## See it in action
-[Check on Repl.it](https://OrangeUnsightlyTransformation--five-nine.repl.co)

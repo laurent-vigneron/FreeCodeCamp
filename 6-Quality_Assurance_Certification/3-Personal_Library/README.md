@@ -2,8 +2,22 @@
 # Personal Library
 
 ## Introduction
+
 Another implementation of the CRUD functions, here applied to a personal book library.
 Also, if you Clone this, don't forget to set `NODE_ENV` to `test` without quotes in your .env (if you're using dotenv) or your environment variables. Otherwise the tests will not run.
+
+---
+## Technologies
+* NodeJS
+* Express
+* Chai
+* Zombie
+* Helmet
+---
+## See it in action
+
+[Check on Repl.it](https://StarchyMintcreamGenerics--five-nine.repl.co)
+
 ---
 ### User stories:
 1. Nothing from my website will be cached in my client as a security measure.
@@ -22,13 +36,4 @@ Also, if you Clone this, don't forget to set `NODE_ENV` to `test` without quotes
 |----------------|----------------|---------------------|------------------|
 | api/books      | list all books | add new book        | delete all books |
 | api/books/1234 | show book 1234 | add comment to 1234 | delete book 1234 |
----
-## Technologies
-* NodeJS
-* Express
-* Chai
-* Zombie
-* Helmet
----
-## See it in action
-[Check on Repl.it](https://StarchyMintcreamGenerics--five-nine.repl.co)
+

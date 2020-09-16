@@ -1,6 +1,10 @@
 # Scientific Computing with Python - Project #1
 ## Arithmetic Arranger
 
+### See it in action
+
+[check on Repl.it](https://repl.it/repls/OutstandingAdventurousLight#arithmetic_arranger.py)
+
 ### Assignment
 
 Students in primary school often arrange arithmetic problems vertically to make them easier to solve. For example, "235 + 52" becomes:
@@ -58,6 +62,3 @@ The function will return the correct conversion if the supplied problems are pro
     * Numbers should be right-aligned.
     * There should be four spaces between each problem.
     * There should be dashes at the bottom of each problem. The dashes should run along the entire length of each problem individually. (The example above shows what this should look like.)
-
-### See it in action
-[check on Repl.it](https://repl.it/repls/OutstandingAdventurousLight#arithmetic_arranger.py)

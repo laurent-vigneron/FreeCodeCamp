@@ -2,6 +2,7 @@
 ## Build a Random Quote Machine
 
 ## Introduction
+
 A very small project using React. Not even using an API to get the quotes. Bootstrap is used to make the design better-looking.
 
 ## Technologies
@@ -9,4 +10,5 @@ A very small project using React. Not even using an API to get the quotes. Boots
 * Bootstrap 4
 
 ## See it in action
+
 https://codepen.io/ljjr/full/eYZpxjZ

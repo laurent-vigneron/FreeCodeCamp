@@ -2,6 +2,7 @@
 ## Polygon Area Calculator
 
 ### See it in action
+
 [check on Repl.it](https://repl.it/repls/BouncyExtralargeBucket#shape_calculator.py)
 
 ### Assignment

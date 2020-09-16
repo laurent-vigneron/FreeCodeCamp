@@ -1,8 +1,20 @@
 # API Project - Project #3 - URL Shortener Microservice
 
 ## Introduction
+
 To complete this project, I've used the Mongoose library (Schema-based JS library for MongoDB) to access a MongoDB cluster created on MongoDB Atlas.
 I could have used the MongoDB JS library directly, and this is what I will do in a future project. But since Mongoose is widely used and was recommended for this project, here we are.
+
+---
+## Technologies
+* NodeJS
+* Express
+* Mongoose
+---
+## See it in action
+
+[Check on Repl.it](https://GranularSnarlingNumericalanalysis--five-nine.repl.co)
+
 ---
 ### User stories:
 1. I can POST a URL to `[project_url]/api/shorturl/new` and I will receive a shortened URL in the JSON response. Example : `{"original_url":"www.google.com","short_url":1}`
@@ -20,11 +32,3 @@ POST [project_url]/api/shorturl/new - body (urlencoded) :  url=https://www.googl
 #### Will redirect to:
 
 https://www.freecodecamp.org/forum/
----
-## Technologies
-* NodeJS
-* Express
-* Mongoose
----
-## See it in action
-[Check on Repl.it](https://GranularSnarlingNumericalanalysis--five-nine.repl.co)
