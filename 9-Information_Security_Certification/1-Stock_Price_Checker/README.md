@@ -15,6 +15,8 @@ As for the logic itself, the main complexity was to make sure all asynchronous c
 
 Lastly, in order to pass the test I have to drop the DB at each startup, which would of course not normally occur otherwise.
 
+Note that the MiddleWare I'm using as an API (https://repeated-alpaca.glitch.me/v1/stock/msft/quote) takes some time to 'wake-up' the first time it is used. So make sure you wake it first, otherwise you will get a timeout on the tests.
+
 ---
 ### Technologies
 * JavaScript
@@ -22,6 +24,7 @@ Lastly, in order to pass the test I have to drop the DB at each startup, which w
 * Express
 * MongoDB 
 * Chai
+* Axios
 ---
 ### User Stories
 
