@@ -15,14 +15,13 @@ const runner            = require('./test-runner');
 const app = express();
 
 app.use(helmet());
-// app.use(helmet({
-//   contentSecurityPolicy: {    // enable and configure
-//     directives: {
-//       defaultSrc: ["self"],
-//       styleSrc: ['self'],
-//     }
-//   },
-// }))
+app.use(helmet({
+  contentSecurityPolicy: {    // enable and configure
+    directives: {
+      defaultSrc: ["'self'"],
+    }
+  }
+}))
 
 app.use('/public', express.static(process.cwd() + '/public'));
 
@@ -35,7 +34,7 @@ MongoClient.connect(process.env.DB, function(err, client) {
   if(err) { console.log('DB error: ' + err); }
   else {
     const db = client.db('FCCStockChecker');
-    // db.collection('stocks').drop();  // only useful for running the tests
+    db.collection('stocks').drop();  // only useful for running the tests
     console.log('DB connection successful.');
     
     //Index page (static HTML)

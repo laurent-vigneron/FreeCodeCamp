@@ -1,5 +1,5 @@
-# Data-Analysis with Python - Project #5
-## Sea-Level Predictor
+# Information Security - Project #1
+## Stock-Price Checker
 
 ### See it in action
 
@@ -8,6 +8,12 @@
 ---
 ### Introduction
 
+The Functional tests for this project took me some time to get right, mainly because the slowness of the both the API and the web Database (MongoDB Atlas) meant that it took more than the allowed 2000ms to perform the tasks. 
+So I had to increase the timeout to 5 seconds in order to get the tests to pass correctly.
+
+As for the logic itself, the main complexity was to make sure all asynchronous calls were resolved before moving to the next step in the process.
+
+Lastly, in order to pass the test I have to drop the DB at each startup, which would of course not normally occur otherwise.
 
 ---
 ### Technologies
@@ -15,6 +21,7 @@
 * NodeJS
 * Express
 * MongoDB 
+* Chai
 ---
 ### User Stories
 
